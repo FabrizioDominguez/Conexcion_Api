@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explorador de contenido aleatorio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Explorador de contenido aleatorio</h1>
+    <p>Consulta una cita, mira una imagen o aprende un dato curioso.</p>
+
+    <section class="cards" aria-label="Contenido aleatorio">
+      <article class="card">
+        <h2>Citas y autores</h2>
+        <div class="result" id="quote-result" aria-live="polite" aria-busy="true"><p>Cargando…</p></div>
+        <button id="quote-button" type="button" disabled>Obtener otra cita</button>
+      </article>
+      <article class="card">
+        <h2>Imágenes de perros</h2>
+        <div class="result image-result" id="dog-result" aria-live="polite" aria-busy="true"><p>Cargando…</p></div>
+        <button id="dog-button" type="button" disabled>Mostrar otro perro</button>
+      </article>
+      <article class="card">
+        <h2>Imágenes de gatos</h2>
+        <div class="result image-result" id="cat-result" aria-live="polite" aria-busy="true"><p>Cargando…</p></div>
+        <button id="cat-button" type="button" disabled>Mostrar otro gato</button>
+      </article>
+      <article class="card">
+        <h2>Datos curiosos</h2>
+        <div class="result" id="fact-result" aria-live="polite" aria-busy="true"><p>Cargando…</p></div>
+        <button id="fact-button" type="button" disabled>Mostrar otro dato</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
